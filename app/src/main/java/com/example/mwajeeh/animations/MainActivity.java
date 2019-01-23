@@ -66,7 +66,7 @@ public class MainActivity extends AppCompatActivity {
                         args.putInt("bg", R.drawable.bg_yellow);
                         break;
                 }
-                return Page.instantiate(MainActivity.this, Page.class.getName(), args);
+                return Banner.instantiate(MainActivity.this, Banner.class.getName(), args);
             }
 
             @Override
@@ -138,17 +138,6 @@ public class MainActivity extends AppCompatActivity {
             super(itemView);
             title = (TextView) itemView.findViewById(R.id.title);
             image = (ImageView) itemView.findViewById(R.id.image);
-        }
-    }
-
-    public static class Page extends Fragment {
-
-        @Nullable
-        @Override
-        public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-            View view = inflater.inflate(R.layout.page, container, false);
-            view.setBackgroundDrawable(ContextCompat.getDrawable(getContext(), getArguments().getInt("bg")));
-            return view;
         }
     }
 }
