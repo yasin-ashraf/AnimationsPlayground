@@ -5,7 +5,7 @@
     android:layout_height="wrap_content"
     android:paddingBottom="30dp"
     android:paddingTop="20dp"
-    android:background="@color/white">
+    android:background="@drawable/rectangle_bg_white">
 
     <TextView
         android:layout_width="wrap_content"

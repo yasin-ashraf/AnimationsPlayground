@@ -20,7 +20,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.mwajeeh.animations.Banner;
+import com.example.mwajeeh.animations.BannerFragment;
 import com.example.mwajeeh.animations.Categories;
 import com.example.mwajeeh.animations.R;
 
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                         args.putBoolean("clickable", true);
                         break;
                 }
-                return Banner.instantiate(MainActivity.this, Banner.class.getName(), args);
+                return BannerFragment.instantiate(MainActivity.this, BannerFragment.class.getName(), args);
             }
 
             @Override

@@ -12,7 +12,7 @@ import android.transition.Transition;
 import android.transition.TransitionListenerAdapter;
 import android.util.TypedValue;
 
-import com.example.mwajeeh.animations.Banner;
+import com.example.mwajeeh.animations.BannerFragment;
 import com.example.mwajeeh.animations.CustomView.ExpandableLayoutOg;
 import com.example.mwajeeh.animations.R;
 
@@ -73,7 +73,7 @@ public class CardExpandActivity extends AppCompatActivity {
                         args.putBoolean("clickable", false);
                         break;
                 }
-                return Banner.instantiate(CardExpandActivity.this, Banner.class.getName(), args);
+                return BannerFragment.instantiate(CardExpandActivity.this, BannerFragment.class.getName(), args);
             }
 
             @Override

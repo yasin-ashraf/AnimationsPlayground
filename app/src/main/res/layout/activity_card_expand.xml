@@ -17,7 +17,7 @@
         app:el_duration="400">
 
         <fragment
-            android:name="com.example.mwajeeh.animations.ExpandedCard"
+            android:name="com.example.mwajeeh.animations.ExpandedCardFragment"
             android:id="@+id/card_expansion"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

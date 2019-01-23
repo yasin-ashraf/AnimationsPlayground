@@ -18,7 +18,7 @@ import com.example.mwajeeh.animations.Activity.MainActivity;
 /**
  * Created by im_yasinashraf started on 23/1/19.
  */
-public class Banner extends Fragment {
+public class BannerFragment extends Fragment {
 
     private CardView card;
     private ImageView cardBg;

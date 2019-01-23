@@ -11,7 +11,7 @@ import android.view.ViewGroup;
 /**
  * Created by im_yasinashraf started on 23/1/19.
  */
-public class ExpandedCard extends Fragment {
+public class ExpandedCardFragment extends Fragment {
 
     @Nullable
     @Override
