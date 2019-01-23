@@ -29,13 +29,27 @@ public class MainActivity extends AppCompatActivity {
 
     private GridLayoutManager layoutManager;
     private RecyclerView list;
+    private ViewPager pager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        initViews();
+    }
+
+    private void initViews(){
+        pager = findViewById(R.id.pager);
+        list = findViewById(R.id.list);
+
+        setupViewPager();
+        layoutManager = new GridLayoutManager(this, 3);
+        list.setLayoutManager(layoutManager);
+        list.setAdapter(new Adapter(LayoutInflater.from(this), Categories.getCategories()));
+    }
+
+    private void setupViewPager() {
         pager.setPageMargin((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20, getResources().getDisplayMetrics()));
         pager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
             @Override
@@ -60,13 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 return 3;
             }
         });
-        list = (RecyclerView) findViewById(R.id.list);
-        layoutManager = new GridLayoutManager(this, 3);
-        list.setLayoutManager(layoutManager);
-        list.setAdapter(new Adapter(LayoutInflater.from(this), Categories.getCategories()));
-
     }
-
 
     public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private LayoutInflater inflater;
@@ -134,6 +142,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static class Page extends Fragment {
+
         @Nullable
         @Override
         public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {

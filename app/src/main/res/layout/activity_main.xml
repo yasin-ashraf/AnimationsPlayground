@@ -9,10 +9,47 @@
     android:paddingTop="16dp"
     tools:context="com.example.mwajeeh.animations.MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Salone at Home"
+        app:fontFamily="@font/product_sans_bold"
+        android:textSize="20sp"
+        android:textColor="#2b2b2b"
+        android:layout_marginBottom="10dp"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_trending"
+            android:tint="#2b2b2b"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:text="Trending packages"
+            android:textAllCaps="true"
+            app:fontFamily="@font/product_sans_regular"
+            android:textSize="14sp"
+            android:textColor="#2b2b2b"/>
+
+    </LinearLayout>
+
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="120dp"
+        android:layout_height="180dp"
         android:clipToPadding="false"
         android:paddingLeft="40dp"
         android:paddingRight="40dp"/>

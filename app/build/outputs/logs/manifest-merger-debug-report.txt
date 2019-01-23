@@ -1,0 +1,172 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.support:design:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/88ca85d686d75d5346c5ac97682a9b70/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7049db78332021b14974f009e3a5187f/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/9c7b8152e384e8a545ffc27759e5a031/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/10ef5394e581596e6d0e80edc7bea290/AndroidManifest.xml:2:1-11:12
+MERGED from [com.android.support:support-fragment:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f0d4897931bf36008c9d980b68bdcd83/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/957252c26d23b03ef1ac64d7debc5d63/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/994814078d0b1843653d090145d73aa3/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9be6daa75ca1e1262fdfd55ede85c680/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e8772600e9b292b60e2002c98b9c914a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f0f715e909f527a0cbea18dcb72ddfbb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:loader:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a6fb64ba1eff3c95a4d512b05edfacfa/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:viewpager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9cb00bd1c7327f09592d14dd4dbe7705/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b236c3c447d4515dc02d938cc0b8e225/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c17f449c8384ed36100e958a6d51071b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c7161bc1c50b42e55c06ea9c6460d98d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:customview:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/02f8cd4aa07ce50815efd287ae28f01a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9a6d6817c717f1be792cd280b15190f1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2d5f0550775b8e2d66fcd74e7e645b4d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d74716747c1efccec8e5dc9e54d425b9/AndroidManifest.xml:17:1-25:12
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/da7c83f4b307c4e328d1f0bc5dfd33cd/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/12a991995067cbc62170cacf88429cac/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/25b8372f3cea185aee7cdaba0fa8a633/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:documentfile:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/12d14fc3d1a2314b8fdc2b89ed9e2ef6/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7c186fde715ca017d7e4b45632e46be2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:print:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/444d6da22921ca2c916b54f8bcccc581/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/32d3d14035a14e14f00f97ba2115bf98/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:interpolator:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ec175500215e5e4f92f26e9c8960d479/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c5a325823bbb2d9a9adf801b26318c69/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/4ab0fa4d86ef4caa4a4aca9fbedc7f69/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/07c8e209a44287311643ee356ba08c65/AndroidManifest.xml:17:1-22:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:3:11-51
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:1-24:12
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:2:11-69
+application
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:5:5-22:19
+MERGED from [com.android.support:design:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/88ca85d686d75d5346c5ac97682a9b70/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:design:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/88ca85d686d75d5346c5ac97682a9b70/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:22:5-94
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d74716747c1efccec8e5dc9e54d425b9/AndroidManifest.xml:22:5-23:19
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d74716747c1efccec8e5dc9e54d425b9/AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:22:18-91
+	android:supportsRtl
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:10:9-35
+	android:label
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:8:9-41
+	android:roundIcon
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:9:9-54
+	android:icon
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:7:9-43
+	android:allowBackup
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:6:9-35
+	android:theme
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:11:9-40
+activity#com.example.mwajeeh.animations.MainActivity
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:12:9-18:20
+	android:name
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:12:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:13:13-17:29
+action#android.intent.action.MAIN
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:14:17-68
+	android:name
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:14:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:16:17-76
+	android:name
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:16:27-74
+activity#com.example.mwajeeh.animations.DetailActivity
+ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:19:9-21:61
+	android:theme
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:21:13-59
+	android:name
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml:20:13-43
+uses-sdk
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+MERGED from [com.android.support:design:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/88ca85d686d75d5346c5ac97682a9b70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/design-28.0.0.aar/88ca85d686d75d5346c5ac97682a9b70/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7049db78332021b14974f009e3a5187f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/appcompat-v7-28.0.0.aar/7049db78332021b14974f009e3a5187f/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/9c7b8152e384e8a545ffc27759e5a031/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-28.0.0.aar/9c7b8152e384e8a545ffc27759e5a031/AndroidManifest.xml:20:5-44
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/10ef5394e581596e6d0e80edc7bea290/AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.JakeWharton:ViewPagerIndicator:2.4.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/ViewPagerIndicator-2.4.1.aar/10ef5394e581596e6d0e80edc7bea290/AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:support-fragment:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f0d4897931bf36008c9d980b68bdcd83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-fragment-28.0.0.aar/f0d4897931bf36008c9d980b68bdcd83/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/957252c26d23b03ef1ac64d7debc5d63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-28.0.0.aar/957252c26d23b03ef1ac64d7debc5d63/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/994814078d0b1843653d090145d73aa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-ui-28.0.0.aar/994814078d0b1843653d090145d73aa3/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9be6daa75ca1e1262fdfd55ede85c680/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-core-utils-28.0.0.aar/9be6daa75ca1e1262fdfd55ede85c680/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e8772600e9b292b60e2002c98b9c914a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-28.0.0.aar/e8772600e9b292b60e2002c98b9c914a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f0f715e909f527a0cbea18dcb72ddfbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/transition-28.0.0.aar/f0f715e909f527a0cbea18dcb72ddfbb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a6fb64ba1eff3c95a4d512b05edfacfa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:loader:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/loader-28.0.0.aar/a6fb64ba1eff3c95a4d512b05edfacfa/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9cb00bd1c7327f09592d14dd4dbe7705/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:viewpager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewpager-28.0.0.aar/9cb00bd1c7327f09592d14dd4dbe7705/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b236c3c447d4515dc02d938cc0b8e225/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:coordinatorlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/coordinatorlayout-28.0.0.aar/b236c3c447d4515dc02d938cc0b8e225/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c17f449c8384ed36100e958a6d51071b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:drawerlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/drawerlayout-28.0.0.aar/c17f449c8384ed36100e958a6d51071b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c7161bc1c50b42e55c06ea9c6460d98d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:slidingpanelayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/slidingpanelayout-28.0.0.aar/c7161bc1c50b42e55c06ea9c6460d98d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/02f8cd4aa07ce50815efd287ae28f01a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:customview:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/customview-28.0.0.aar/02f8cd4aa07ce50815efd287ae28f01a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9a6d6817c717f1be792cd280b15190f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:swiperefreshlayout:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/swiperefreshlayout-28.0.0.aar/9a6d6817c717f1be792cd280b15190f1/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2d5f0550775b8e2d66fcd74e7e645b4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:asynclayoutinflater:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/asynclayoutinflater-28.0.0.aar/2d5f0550775b8e2d66fcd74e7e645b4d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/support-compat-28.0.0.aar/fa8a3513fa8fc4ebdb5c711baba82250/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d74716747c1efccec8e5dc9e54d425b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:versionedparcelable:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/versionedparcelable-28.0.0.aar/d74716747c1efccec8e5dc9e54d425b9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/da7c83f4b307c4e328d1f0bc5dfd33cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cursoradapter:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cursoradapter-28.0.0.aar/da7c83f4b307c4e328d1f0bc5dfd33cd/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/12a991995067cbc62170cacf88429cac/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:cardview-v7:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/cardview-v7-28.0.0.aar/12a991995067cbc62170cacf88429cac/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/25b8372f3cea185aee7cdaba0fa8a633/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/25b8372f3cea185aee7cdaba0fa8a633/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/12d14fc3d1a2314b8fdc2b89ed9e2ef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:documentfile:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/documentfile-28.0.0.aar/12d14fc3d1a2314b8fdc2b89ed9e2ef6/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7c186fde715ca017d7e4b45632e46be2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:localbroadcastmanager:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/localbroadcastmanager-28.0.0.aar/7c186fde715ca017d7e4b45632e46be2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/444d6da22921ca2c916b54f8bcccc581/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:print:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/print-28.0.0.aar/444d6da22921ca2c916b54f8bcccc581/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/32d3d14035a14e14f00f97ba2115bf98/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.1.aar/32d3d14035a14e14f00f97ba2115bf98/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ec175500215e5e4f92f26e9c8960d479/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:interpolator:28.0.0] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/interpolator-28.0.0.aar/ec175500215e5e4f92f26e9c8960d479/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c5a325823bbb2d9a9adf801b26318c69/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-1.1.1.aar/c5a325823bbb2d9a9adf801b26318c69/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/4ab0fa4d86ef4caa4a4aca9fbedc7f69/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.1.aar/4ab0fa4d86ef4caa4a4aca9fbedc7f69/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/07c8e209a44287311643ee356ba08c65/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.1] /home/im_yasinashraf/.gradle/caches/transforms-1/files-1.1/runtime-1.1.1.aar/07c8e209a44287311643ee356ba08c65/AndroidManifest.xml:20:5-44
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		ADDED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
+		INJECTED from /home/im_yasinashraf/Yasin's/AnimationsPlayground/app/src/main/AndroidManifest.xml
