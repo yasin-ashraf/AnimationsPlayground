@@ -1,0 +1,151 @@
+package com.example.mwajeeh.animations.Activity;
+
+import android.app.ActivityOptions;
+import android.content.Context;
+import android.content.Intent;
+import android.os.Build;
+import android.os.Bundle;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentStatePagerAdapter;
+import android.support.v4.view.ViewPager;
+import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.util.Pair;
+import android.util.TypedValue;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.view.Window;
+import android.widget.ImageView;
+import android.widget.TextView;
+
+import com.example.mwajeeh.animations.Banner;
+import com.example.mwajeeh.animations.Categories;
+import com.example.mwajeeh.animations.R;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class MainActivity extends AppCompatActivity {
+
+    private GridLayoutManager layoutManager;
+    private RecyclerView list;
+    private ViewPager pager;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        initViews();
+    }
+
+    private void initViews(){
+        pager = findViewById(R.id.pager);
+        list = findViewById(R.id.list);
+
+        setupViewPager();
+        layoutManager = new GridLayoutManager(this, 3);
+        list.setLayoutManager(layoutManager);
+        list.setAdapter(new Adapter(LayoutInflater.from(this), Categories.getCategories()));
+    }
+
+    private void setupViewPager() {
+        pager.setPageMargin((int) TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 20, getResources().getDisplayMetrics()));
+        pager.setAdapter(new FragmentStatePagerAdapter(getSupportFragmentManager()) {
+            @Override
+            public Fragment getItem(int position) {
+                Bundle args = new Bundle();
+                switch (position) {
+                    case 0:
+                        args.putInt("bg", R.drawable.bg_red);
+                        args.putInt("position", position);
+                        args.putBoolean("clickable", true);
+                        break;
+                    case 1:
+                        args.putInt("bg", R.drawable.bg_blue);
+                        args.putInt("position", position);
+                        args.putBoolean("clickable", true);
+                        break;
+                    case 2:
+                        args.putInt("bg", R.drawable.bg_yellow);
+                        args.putInt("position", position);
+                        args.putBoolean("clickable", true);
+                        break;
+                }
+                return Banner.instantiate(MainActivity.this, Banner.class.getName(), args);
+            }
+
+            @Override
+            public int getCount() {
+                return 3;
+            }
+        });
+    }
+
+    public class Adapter extends RecyclerView.Adapter<ViewHolder> {
+        private LayoutInflater inflater;
+        private final List<Categories.Category> items;
+
+        Adapter(LayoutInflater inflater, List<Categories.Category> items) {
+            this.inflater = inflater;
+            this.items = items;
+        }
+
+        @Override
+        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+            return new ViewHolder(inflater.inflate(R.layout.list_item, parent, false));
+        }
+
+        @Override
+        public void onBindViewHolder(final ViewHolder holder, int position) {
+            holder.title.setText(items.get(position).title);
+            holder.image.setImageResource(items.get(position).image);
+            holder.itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    int adapterPosition = holder.getAdapterPosition();
+                    if (adapterPosition == RecyclerView.NO_POSITION) {
+                        return;
+                    }
+                    Context context = v.getContext();
+                    Intent intent = new Intent(context, DetailActivity.class);
+                    intent.putExtra("position", adapterPosition);
+                    //// TODO: 25/04/2017 Use ActivityOptionsCompat to support pre-lollipop
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                        int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
+                        int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
+                        List<Pair<View, String>> pairs = new ArrayList<Pair<View, String>>();
+                        for (int i = firstVisibleItemPosition; i <= lastVisibleItemPosition; i++) {
+                            ViewHolder holderForAdapterPosition = (ViewHolder) list.findViewHolderForAdapterPosition(i);
+                            View itemView = holderForAdapterPosition.image;
+                            pairs.add(Pair.create(itemView, "tab_" + i));
+                        }
+                        Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs.toArray(new Pair[]{})).toBundle();
+                        context.startActivity(intent, bundle);
+                    } else {
+                        context.startActivity(intent);
+                    }
+                }
+            });
+        }
+
+        @Override
+        public int getItemCount() {
+            return items.size();
+        }
+    }
+
+
+    private static class ViewHolder extends RecyclerView.ViewHolder {
+        private final TextView title;
+        private final ImageView image;
+
+        public ViewHolder(View itemView) {
+            super(itemView);
+            title = (TextView) itemView.findViewById(R.id.title);
+            image = (ImageView) itemView.findViewById(R.id.image);
+        }
+    }
+}

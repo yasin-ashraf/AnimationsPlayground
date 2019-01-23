@@ -15,7 +15,7 @@ public class Categories {
         Random rand = new Random();
         List<Category> items = new ArrayList<>();
         for (int i = 0; i < 6; i++) {
-            items.add(new Category("title:" + i, getImage(rand.nextInt(2))));
+            items.add(new Category("title:" + i, getImage(rand.nextInt(5))));
         }
         return items;
     }
@@ -33,9 +33,15 @@ public class Categories {
     private static int getImage(int position) {
         switch (position) {
             case 0:
-                return R.drawable.image_1;
+                return R.drawable.car;
+            case 1:
+                return R.drawable.sedan;
+            case 2:
+                return R.drawable.bicycle;
+            case 3:
+                return R.drawable.bike;
             default:
-                return R.drawable.image_2;
+                return R.drawable.jeep;
         }
     }
 }

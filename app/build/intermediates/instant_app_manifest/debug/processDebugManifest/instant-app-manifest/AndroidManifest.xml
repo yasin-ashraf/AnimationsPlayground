@@ -19,7 +19,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
-        <activity android:name="com.example.mwajeeh.animations.MainActivity" >
+        <activity android:name="com.example.mwajeeh.animations.Activity.MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,8 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.mwajeeh.animations.DetailActivity"
+            android:name="com.example.mwajeeh.animations.Activity.DetailActivity"
             android:theme="@style/AppTheme.DetailActivity" />
+        <activity
+            android:name="com.example.mwajeeh.animations.Activity.CardExpandActivity"
+            android:theme="@style/AppTheme.CardExpand" />
 
         <provider
             android:name="com.android.tools.ir.server.InstantRunContentProvider"
