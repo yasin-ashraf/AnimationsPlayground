@@ -84,6 +84,17 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void startCardExpandActivity(int position) {
+        Intent intent = new Intent(MainActivity.this,CardExpandActivity.class);
+        intent.putExtra("ClickedPosition",position);
+
+        View sharedView = pager;
+        String transitionName = getString(R.string.card_transition);
+
+        ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(this, sharedView, transitionName);
+        startActivity(intent, transitionActivityOptions.toBundle());
+    }
+
     public class Adapter extends RecyclerView.Adapter<ViewHolder> {
         private LayoutInflater inflater;
         private final List<Categories.Category> items;

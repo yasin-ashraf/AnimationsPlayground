@@ -1,5 +1,6 @@
 package com.example.mwajeeh.animations;
 
+import android.app.ActivityOptions;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -12,6 +13,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.example.mwajeeh.animations.Activity.CardExpandActivity;
+import com.example.mwajeeh.animations.Activity.MainActivity;
 
 /**
  * Created by im_yasinashraf started on 23/1/19.
@@ -31,9 +33,11 @@ public class Banner extends Fragment {
 
         view.setOnClickListener(view1 -> {
             if(getArguments().getBoolean("clickable")){
-                Intent intent = new Intent(getActivity(),CardExpandActivity.class);
-                intent.putExtra("ClickedPosition",getArguments().getInt("position"));
-                startActivity(intent);
+                ((MainActivity)getActivity()).startCardExpandActivity(getArguments().getInt("position"));
+
+            }else {
+                //if not clickable it will be in Second Activity, then collapse card
+                ((CardExpandActivity)getActivity()).collapseCard();
             }
         });
         return view;

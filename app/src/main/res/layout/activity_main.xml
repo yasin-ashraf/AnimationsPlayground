@@ -52,7 +52,8 @@
         android:layout_height="180dp"
         android:clipToPadding="false"
         android:paddingLeft="40dp"
-        android:paddingRight="40dp"/>
+        android:paddingRight="40dp"
+        android:transitionName="@string/card_transition"/>
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"

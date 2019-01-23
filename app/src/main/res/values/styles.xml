@@ -10,6 +10,8 @@
 
         <!-- Status bar stuff. -->
         <item name="android:statusBarColor">@color/colorPrimaryDark</item>
+
+        <item name="android:windowContentTransitions">true</item>
     </style>
 
     <style name="AppTheme.DetailActivity">
@@ -23,9 +25,7 @@
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowIsFloating">false</item>
-        <item name="android:windowEnterAnimation">@android:transition/slide_top</item>
-        <item name="android:windowExitAnimation">@android:transition/slide_bottom</item>
         <item name="android:backgroundDimEnabled">true</item>
-        <item name="android:backgroundDimAmount">0.7</item>
+        <item name="android:backgroundDimAmount">0.6</item>
     </style>
 </resources>

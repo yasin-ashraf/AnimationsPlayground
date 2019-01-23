@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Complex Anim 1</string>
+    <string name="card_transition">Card shared transition</string>
 </resources>
