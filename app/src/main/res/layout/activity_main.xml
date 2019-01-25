@@ -62,6 +62,7 @@
         android:paddingStart="30dp"
         android:paddingTop="30dp"
         android:paddingEnd="30dp"
-        android:paddingBottom="10dp"/>
+        android:paddingBottom="10dp"
+        android:clipToPadding="false"/>
 
 </LinearLayout>

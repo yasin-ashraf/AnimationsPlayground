@@ -14,7 +14,7 @@ public class Categories {
     private static List<Category> generateItems() {
         Random rand = new Random();
         List<Category> items = new ArrayList<>();
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < 12; i++) {
             items.add(new Category("title:" + i, getImage(rand.nextInt(5))));
         }
         return items;
