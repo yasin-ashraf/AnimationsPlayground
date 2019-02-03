@@ -48,9 +48,7 @@ public class DetailActivity extends AppCompatActivity {
         coordinatorLayout.setOnApplyWindowInsetsListener((view, windowInsets) -> {
 
             ViewGroup.MarginLayoutParams lpViewPager = (ViewGroup.MarginLayoutParams) pager.getLayoutParams();
-
             lpViewPager.bottomMargin += windowInsets.getSystemWindowInsetBottom();
-
             pager.setLayoutParams(lpViewPager);
 
             ViewGroup.MarginLayoutParams lpToolbar = (ViewGroup.MarginLayoutParams) toolbar.getLayoutParams();
@@ -62,7 +60,6 @@ public class DetailActivity extends AppCompatActivity {
 
             // clear this listener so insets aren't re-applied
             coordinatorLayout.setOnApplyWindowInsetsListener(null);
-
             return windowInsets.consumeSystemWindowInsets();
         });
 

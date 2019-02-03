@@ -20,6 +20,7 @@ import android.view.Window;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.mwajeeh.animations.Adapter.ListAdapter;
 import com.example.mwajeeh.animations.BannerFragment;
 import com.example.mwajeeh.animations.Categories;
 import com.example.mwajeeh.animations.R;
@@ -48,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
         setupViewPager();
         layoutManager = new GridLayoutManager(this, 3);
         list.setLayoutManager(layoutManager);
-        list.setAdapter(new Adapter(LayoutInflater.from(this), Categories.getCategories()));
+        list.setAdapter(new ListAdapter(Categories.getCategories(),MainActivity.this));
     }
 
     private void setupViewPager() {
@@ -93,70 +94,5 @@ public class MainActivity extends AppCompatActivity {
 
         ActivityOptions transitionActivityOptions = ActivityOptions.makeSceneTransitionAnimation(this, sharedView, transitionName);
         startActivity(intent, transitionActivityOptions.toBundle());
-    }
-
-    public class Adapter extends RecyclerView.Adapter<ViewHolder> {
-        private LayoutInflater inflater;
-        private final List<Categories.Category> items;
-
-        Adapter(LayoutInflater inflater, List<Categories.Category> items) {
-            this.inflater = inflater;
-            this.items = items;
-        }
-
-        @Override
-        public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            return new ViewHolder(inflater.inflate(R.layout.list_item, parent, false));
-        }
-
-        @Override
-        public void onBindViewHolder(final ViewHolder holder, int position) {
-            holder.title.setText(items.get(position).title);
-            holder.image.setImageResource(items.get(position).image);
-            holder.itemView.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int adapterPosition = holder.getAdapterPosition();
-                    if (adapterPosition == RecyclerView.NO_POSITION) {
-                        return;
-                    }
-                    Context context = v.getContext();
-                    Intent intent = new Intent(context, DetailActivity.class);
-                    intent.putExtra("position", adapterPosition);
-                    //// TODO: 25/04/2017 Use ActivityOptionsCompat to support pre-lollipop
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                        int firstVisibleItemPosition = layoutManager.findFirstVisibleItemPosition();
-                        int lastVisibleItemPosition = layoutManager.findLastVisibleItemPosition();
-                        List<Pair<View, String>> pairs = new ArrayList<Pair<View, String>>();
-                        for (int i = firstVisibleItemPosition; i <= lastVisibleItemPosition; i++) {
-                            ViewHolder holderForAdapterPosition = (ViewHolder) list.findViewHolderForAdapterPosition(i);
-                            View itemView = holderForAdapterPosition.image;
-                            pairs.add(Pair.create(itemView, "tab_" + i));
-                        }
-                        Bundle bundle = ActivityOptions.makeSceneTransitionAnimation(MainActivity.this, pairs.toArray(new Pair[]{})).toBundle();
-                        context.startActivity(intent, bundle);
-                    } else {
-                        context.startActivity(intent);
-                    }
-                }
-            });
-        }
-
-        @Override
-        public int getItemCount() {
-            return items.size();
-        }
-    }
-
-
-    private static class ViewHolder extends RecyclerView.ViewHolder {
-        private final TextView title;
-        private final ImageView image;
-
-        public ViewHolder(View itemView) {
-            super(itemView);
-            title = (TextView) itemView.findViewById(R.id.title);
-            image = (ImageView) itemView.findViewById(R.id.image);
-        }
     }
 }
