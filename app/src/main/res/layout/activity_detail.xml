@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.design.widget.CoordinatorLayout
+    android:id="@+id/coordinator"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
-    android:clipToPadding="false"
-    android:fitsSystemWindows="true">
+    android:clipToPadding="false">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@android:color/black"
-        android:fitsSystemWindows="true"
+        android:background="@color/white"
         app:elevation="0dp"
         app:layout_behavior="com.example.mwajeeh.animations.DisableViewPagerTouchOnScrollBehaviour">
 
@@ -21,38 +20,43 @@
             android:id="@+id/toolbar_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fitsSystemWindows="true"
+            app:contentScrim="@color/white"
+            app:statusBarScrim="@color/white"
             app:elevation="0dp"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
+            android:clipToPadding="false">
             <!--dummy view-->
-            <View
+            <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
-                android:fitsSystemWindows="true"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_red" />
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
                 android:background="@android:color/transparent"
-                android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
                 app:elevation="0dp"
-                app:layout_collapseMode="pin"/>
+                app:layout_collapseMode="pin" />
+
         </android.support.design.widget.CollapsingToolbarLayout>
+
     </android.support.design.widget.AppBarLayout>
 
     <com.example.mwajeeh.animations.IconPageIndicator
         android:id="@+id/indicator"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="?attr/actionBarSize"
         android:clipChildren="false"
         android:clipToPadding="false"
-        android:fitsSystemWindows="true"
-        app:layout_behavior="com.example.mwajeeh.animations.CollapsingIndicatorBehaviour"/>
+        app:layout_behavior="com.example.mwajeeh.animations.CollapsingIndicatorBehaviour" />
 
     <android.support.v4.view.ViewPager
         android:id="@+id/pager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+        android:layout_height="wrap_content"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:clipToPadding="false" />
+
 </android.support.design.widget.CoordinatorLayout>

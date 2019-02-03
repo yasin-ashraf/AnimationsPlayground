@@ -1,9 +1,9 @@
 package com.example.mwajeeh.animations.Activity;
 
 import android.content.Context;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -15,7 +15,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.widget.TextView;
 
 import com.example.mwajeeh.animations.Categories;
@@ -29,23 +28,45 @@ import java.util.List;
 public class DetailActivity extends AppCompatActivity {
 
     private PageIndicator indicator;
+    private CoordinatorLayout coordinatorLayout;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // inside your activity (if you did not enable transitions in your theme)
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            getWindow().requestFeature(Window.FEATURE_CONTENT_TRANSITIONS);
-        }
         setContentView(R.layout.activity_detail);
 
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
         final ViewPager pager = (ViewPager) findViewById(R.id.pager);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        coordinatorLayout = findViewById(R.id.coordinator);
+        indicator = findViewById(R.id.indicator);
+
+        // Since recyclerview is a child of viewpager, window insets cannot applied directly on recycler view, hence remove insets from all view and apply it manually
+        // manually on required children
+        coordinatorLayout.setOnApplyWindowInsetsListener((view, windowInsets) -> {
+
+            ViewGroup.MarginLayoutParams lpViewPager = (ViewGroup.MarginLayoutParams) pager.getLayoutParams();
+
+            lpViewPager.bottomMargin += windowInsets.getSystemWindowInsetBottom();
+
+            pager.setLayoutParams(lpViewPager);
+
+            ViewGroup.MarginLayoutParams lpToolbar = (ViewGroup.MarginLayoutParams) toolbar.getLayoutParams();
+            lpToolbar.topMargin += windowInsets.getSystemWindowInsetTop();
+            lpToolbar.leftMargin += windowInsets.getSystemWindowInsetLeft();
+            lpToolbar.rightMargin += windowInsets.getSystemWindowInsetRight();
+
+            toolbar.setLayoutParams(lpToolbar);
+
+            // clear this listener so insets aren't re-applied
+            coordinatorLayout.setOnApplyWindowInsetsListener(null);
+
+            return windowInsets.consumeSystemWindowInsets();
+        });
+
         pager.setAdapter(new IconAdapter(this, getSupportFragmentManager()));
-        indicator = (PageIndicator) findViewById(R.id.indicator);
         indicator.setViewPager(pager);
         pager.setCurrentItem(getIntent().getIntExtra("position", 0), false);
         supportPostponeEnterTransition();

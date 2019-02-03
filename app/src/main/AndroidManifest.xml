@@ -17,8 +17,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Activity.DetailActivity"
-            android:theme="@style/AppTheme.DetailActivity"/>
+            android:name=".Activity.DetailActivity" />
         <activity android:name=".Activity.CardExpandActivity"
             android:theme="@style/AppTheme.CardExpand"/>
     </application>

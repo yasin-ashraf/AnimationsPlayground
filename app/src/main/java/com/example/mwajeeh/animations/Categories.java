@@ -28,6 +28,14 @@ public class Categories {
             this.title = title;
             this.image = image;
         }
+
+        public String getTitle() {
+            return title;
+        }
+
+        public int getImage() {
+            return image;
+        }
     }
 
     private static int getImage(int position) {
