@@ -1,7 +1,5 @@
-package com.example.mwajeeh.animations;
+package com.example.mwajeeh.animations.Fragment;
 
-import android.app.ActivityOptions;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -14,6 +12,7 @@ import android.widget.ImageView;
 
 import com.example.mwajeeh.animations.Activity.CardExpandActivity;
 import com.example.mwajeeh.animations.Activity.MainActivity;
+import com.example.mwajeeh.animations.R;
 
 /**
  * Created by im_yasinashraf started on 23/1/19.

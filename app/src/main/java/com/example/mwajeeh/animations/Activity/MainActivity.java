@@ -1,9 +1,7 @@
 package com.example.mwajeeh.animations.Activity;
 
 import android.app.ActivityOptions;
-import android.content.Context;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentStatePagerAdapter;
@@ -11,22 +9,13 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Pair;
 import android.util.TypedValue;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.example.mwajeeh.animations.Adapter.ListAdapter;
-import com.example.mwajeeh.animations.BannerFragment;
+import com.example.mwajeeh.animations.Fragment.BannerFragment;
 import com.example.mwajeeh.animations.Categories;
 import com.example.mwajeeh.animations.R;
-
-import java.util.ArrayList;
-import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 

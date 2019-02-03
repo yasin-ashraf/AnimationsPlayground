@@ -12,7 +12,7 @@ import android.transition.Transition;
 import android.transition.TransitionListenerAdapter;
 import android.util.TypedValue;
 
-import com.example.mwajeeh.animations.BannerFragment;
+import com.example.mwajeeh.animations.Fragment.BannerFragment;
 import com.example.mwajeeh.animations.CustomView.ExpandableLayoutOg;
 import com.example.mwajeeh.animations.R;
 
